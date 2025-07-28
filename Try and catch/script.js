@@ -52,6 +52,9 @@ btn.addEventListener("click",function(){
     } catch (error) {
         msg.innerText = error.message
     }
+    finally{
+        console.log("finally");
+    }
 })
 
 
