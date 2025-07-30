@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+    gap: 50px;
+}
+
+#btn{
+    background-color: rgb(23, 217, 23);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: rgb(66, 124, 248);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.btn:disabled{
+    opacity: 0.6;
+}
+
+.again{
+    background-color: chocolate;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.again:disabled{
+    opacity: 0.6;
+}

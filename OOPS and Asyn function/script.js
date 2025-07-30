@@ -48,19 +48,19 @@ function bike(color,cost){
   this.color = color;
   this.cost = cost
 
-  this.nxtprice = 200
+  let nxtprice = 200
   this.details = function(){
     console.log(this.color, this.cost);
   }
 
   this.nxtYrPrice = function(){
-    console.log(this.nxtprice);
+    console.log(nxtprice+this.cost);
   }
 }
 
 let b1= new bike("black",2000)
 // b1.details()
-// b1.nxtprice = 500
+b1.nxtprice = 500
 // b1.nxtYrPrice()
 
 
@@ -122,8 +122,39 @@ class Crow extends Animals{
   }
 }
 
-let tiger = new Tiger()
-tiger.eat()
+let tiger = new Lion()
+// tiger.hunt()
+
+
+//-------------------------------------------------------------
+
+function callPerson(Place){
+  Place.behaviour()
+}
+
+const atHome = {
+  behaviour: function(){
+    console.log("Good");
+  }
+}
+
+const atClg = {
+  behaviour : function(){
+    console.log("as Student");
+  }
+}
+
+const withFrnds = {
+  behaviour: function(){
+    console.log("In chill mood");
+  }
+}
+
+callPerson(atHome)
+
+
+
+
 
 //-------------------------------------------------------
 // Async/Await

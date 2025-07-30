@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <span class="scoreboard">0/0</span> 
-    <span>-------</span>
-    <span class="currentball">Current Ball</span>
-    <button class="btn">Click</button>
+    <div class="flex">
+        <div>
+            <div>
+                <select name="" id="over">
+                    <option value="1">1 Over</option>
+                    <option value="3">3 Over</option>
+                    <option value="5">5 Over</option>
+                </select>
+
+                <select name="" id="wickets">
+                    <option value="1">1 wicket</option>
+                    <option value="3">3 wickets</option>
+                    <option value="5">5 wickets</option>
+                </select>
+
+            <button id="btn" style="height: 20px;">Start</button>
+                
+
+            </div>
+            <div>
+                <span class="scoreboard">0/0 (0.0)</span>
+                <span>-------</span>
+                <span class="currentball">Current Ball</span>
+            </div>
+            <div class="score"></div>
+            <button class="btn" style="height: 20px;" disabled="true">Next Ball</button>
+            <button class="again" disabled="true">Play again</button>
+        </div>
+
+        <img class="img" src="./1.jpg" style="height: 100px; width: 100px;">
+
+    </div>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </body>
+
 </html>
